@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Business</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth;
+        }
+        body {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+            text-align: center;
+        }
+        h1, h2 {
+            margin-bottom: 15px;
+        }
+        
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 50px;
+            background: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #ffdd57;
+            font-size: 18px;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+        .navbar a:hover {
+            color: #fff;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .hero h1 {
+            font-size: 50px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hero p {
+            font-size: 20px;
+            margin: 15px 0;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+        .hero button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background: #ffdd57;
+            border: none;
+            color: black;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .hero button:hover {
+            background: #ffd700;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 60px 20px;
+            background: #fff;
+            color: black;
+        }
+        .services .service-box {
+            display: inline-block;
+            width: 30%;
+            padding: 20px;
+            margin: 20px;
+            background: #2575fc;
+            color: white;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .services .service-box:hover {
+            background: #6a11cb;
+            transform: scale(1.05);
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 60px 20px;
+        }
+        .testimonial {
+            font-style: italic;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin: 10px;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        /* Contact */
+        .contact {
+            padding: 60px 20px;
+            background: #fff;
+            color: black;
+        }
+        .contact input, .contact textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #2575fc;
+        }
+        .contact button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background: #2575fc;
+            border: none;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .contact button:hover {
+            background: #6a11cb;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        /* Manager Info */
+        .manager-info {
+            margin-top: 20px;
+            padding: 20px;
+            background: #ffdd57;
+            color: black;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .services .service-box {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Welcome to Our Local Business</h1>
+        <p>Your trusted solution for all your needs.</p>
+        <button onclick="alert('Thank you for visiting!')">Get Started</button>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-box">✔ Web Design</div>
+        <div class="service-box">✔ Marketing</div>
+        <div class="service-box">✔ Customer Support</div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">"Amazing service! Highly recommended!"</div>
+        <div class="testimonial">"Best experience ever, professional and quick!"</div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <input type="text" placeholder="Your Name"><br>
+        <input type="email" placeholder="Your Email"><br>
+        <textarea placeholder="Your Message"></textarea><br>
+        <button>Send Message</button>
+
+        <!-- Manager Info -->
+        <div class="manager-info">
+            <h3>Manager: Maduhu Luckson</h3>
+            <p>📞 Contact: +255776353873</p>
+            <p>📧 Email: maduhuluckson@gmail.com</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2025 Local Business | All rights reserved.
+    </div>
+
+</body>
+</html>
+ <ALOASK-SEPARATE-EDITORS>
+
+ <ALOASK-SEPARATE-EDITORS>LUCKSON STARK 47 TECHNOLOGIES &copy; 2025
